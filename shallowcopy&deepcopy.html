@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 
+        // let obj ={name:"mallesh"}
+
+        // let user=obj;
+        // user.name ="isha";
+
+        // console.log(user);
+
+
+        // shallow copy
+
+        // let obj ={ name:"mallesh", address:{
+        //     state:"mh",
+        //     city:"kalyan"
+        // } };
+
+        // let user=Object.assign({},obj);  //it is applible to the only array element & not nested element.
+        // user.name ="isha";
+        // user.address.city="pune";  // it will not appliable to the this nested element.
+
+        // console.log(obj);
+        // console.warn(user);
+
+
+
+        // deep copy
+
+        let obj={name:"mallesh",
+        address:{city:"kalyan", state : "MH"}
+            }
+
+            let scess = JSON.parse(JSON.stringify(obj));
+            
+            scess.address.city = "pune";
+
+            console.log(obj);
+            console.log(scess);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .result {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Closures</h1>
+    <div style="color: green;" class="result"></div>
+    <button class="Btn">CLICK HERE</button>
+    <h3>Click on the above button to add two numbers using closure</h3>
+    <script>
+        let sampleEle = document.querySelector(".sample");
+        let resEle = document.querySelector(".result");
+
+        function add(num) {
+            return function add1(num1) {
+                resEle.innerHTML += `${num}+${num1} = ${num + num1}`;
+            };
+        }
+        document.querySelector(".Btn").addEventListener("click", () => {
+            let storeadd = add(99);
+            storeadd(44);
+        });
+    </script>
+</body>
+
+</html>

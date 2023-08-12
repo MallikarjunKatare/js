@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- <script>
+
+        // for array methods
+        let arr =["well","car", 179, 198, true];
+
+            // arr.pop();  to remove the last element from array
+            // arr.push('mallesh'); to  add element in array
+            // arr.shift(); to remove the last element from array
+            // arr.unshift("mallikarjun");  to  add element at 1st position  in array 
+        console.log(arr);
+
+
+        let ar1=       arr.splice(3,2,125,126);    // to add the element & Remove the from array
+        console.log(ar1);
+
+        
+
+    </script>
+
+    <script>
+        // for String accessing value;
+
+        let mystring ="Mallesh is a good boy boy";
+
+        console.log(mystring.length);
+        console.log(mystring.indexOf("boy"));  //it give the index of 1st letter of word
+        console.log(mystring.lastIndexOf("boy"));
+        console.log(mystring.replace('Mallesh','Rahul'),mystring); //it replace the word with other word
+
+        console.log(mystring.slice(0,4));  //it display the sring character between start index & end index
+
+    </script> -->
+    <!-- 
+    <script>
+// array sort
+// let ar2=["a","z","b","m"];
+// console.log(ar2.sort());
+
+
+// compare=(a,b) =>
+// {
+//     return a-b;
+// }
+
+// console.log(arr.sort(compare));
+
+// arrry splice
+// // arr.splice(2,7,55,54,99,100);
+// let arr=[1,5,90,2,50,75,40,33,34];
+
+// // console.log(arr);
+
+// // console.log(arr.slice(2,6));
+
+// console.log(arr);
+
+
+
+// for each 
+
+let num=[1,5,15,24,17];
+
+num.forEach((Element)=>{
+    console.log(Element*Element);
+})
+
+
+// for in loop which give the key values,
+
+for(let fu in num){
+console.log(fu);
+}
+
+
+// for of loop which give the  values,
+
+for(let fu of num){
+console.log(fu);
+}
+
+
+
+    </script> -->
+<!-- 
+    <script>
+        // Map, filter , reduce
+
+        // 1. Map
+
+        let num = [25, 45, 52, 41];
+        // a. for add, in which we use any function
+
+        // map carry 3 part - 1. value, 2. index 3. array
+        // let maparray = num.map((value, index, array) => {
+
+        //     console.log(value, index, array);  // to show the array, lndex & value 
+        //     return value + value;
+
+        // }
+        // )
+
+
+
+        //    b. for index add with value  
+
+
+        let maparray2 = num.map((value, index, array) => {
+
+           
+            console.log(value, index, array);  // to show the array, lenght & value 
+
+            return value + index;
+
+
+        }
+        )
+
+        console.log(maparray2);
+
+    </script> -->
+<!-- 
+<script>
+    // for filter 
+
+    let num = [12,5,2,56,20];
+
+    // we use filter for applied the condition like the number should than 20, or number should greater than 50
+
+    let filnum= num.filter((value)=>{
+
+    return value <20;
+    })
+
+    console.log(filnum);
+
+</script> -->
+
+
+<script>
+    // for reduce 
+
+    let arr=[1,2,3,5,52,12];
+debugger
+    let Redarr= arr.reduce((a)=>{
+
+        return a+a;
+    })
+
+    console.log(Redarr);
+</script>
+</body>
+
+</html>

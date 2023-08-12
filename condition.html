@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="i">what is your age?</label>
+    <input type="number" name="i" id="i">
+    <button onclick="ag(i.value)">submit</button>
+<hr>
+    <div id="ide"></div>
+
+    <script>
+
+        function ag(age) {
+
+    //  var age=18;
+
+
+            // ternary opertion
+    console.log( (ag < 18? "You are kid" :"you  a child"));
+
+
+            if (age > 18 && age <= 24) {
+                ide.innerHTML = "Your are not a kid";
+
+            }
+            else if (age > 24) {
+                ide.innerHTML = "Now time to work";
+
+            }
+            else if (age <= 18) {
+                ide.innerHTML = "now your not adult";
+            }
+
+           
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

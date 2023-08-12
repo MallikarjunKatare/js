@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>you get give time by click on button</h2>
+
+    <br>
+
+    <button onclick="dateTime()">
+        click me
+    </button>
+
+    <div id="de"></div>
+
+
+    <script>
+
+function dateTime() {
+            debugger
+            // setinterval for js function call continously.
+            setInterval(time, 1000);
+
+
+            function time() {
+               
+                // console.log(Date());
+
+                // method 1 for time only
+                // const d = new Date();
+                // de.innerHTML = d.toLocaleTimeString();
+
+                // // method 2 for time & date
+                // // or
+                de.innerHTML = new Date();
+                // ;
+            }
+        }    
+
+  
+    </script>
+</body>
+
+</html>

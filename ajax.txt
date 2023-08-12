@@ -1,0 +1,64 @@
+Mallikarjun is good boy
+<br>
+he is working in moncrest software pvt ltd.
+he stay in pune.
+he is going to goa for fun.
+
+let fetchbtn= document.getElementById("fetchbtn");
+fetchbtn.addEventListener("click", buttonclick);
+
+function buttonclick(){
+console.log("button is clicked");
+
+
+// instantiate an object
+const xhr = new XMLHttpRequest();
+
+// open the object  
+
+// to get data
+xhr.open('GET', 'https://dummy.restapiexample.com/api/v1/employees',true)
+
+// to send data
+// xhr.open('POST','https://dummy.restapiexample.com/api/v1/create',true )
+
+// xhr.setRequestHeader('content-type', 'application/json')
+
+
+// what to do on progress (optional)
+xhr.onprogress =function(){
+    console.log("on progress");
+
+}
+
+// what to do when reponse is ready 
+
+
+xhr.onload=function(){
+    if(this.status === 200)
+    {
+    console.log("it is ready ");
+
+    console.log(this.responseText);
+    dat.innerHTML =this.responseText
+    }
+    else{
+        console.log("some error")
+        dat.innerHTML = "<b>some error occur</b>";
+    }
+}
+
+// send the request
+
+// Params= {
+//     "userId": 100,
+//     "id": 100,
+//     "title": "delectus aut the autem",
+//     "completed": true
+//   };
+
+
+// xhr.send(Params);
+xhr.send();
+
+}

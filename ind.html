@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="x">Put the x value</label>
+    <input type="text" name="x" id="x">
+    &nbsp;
+    <label for="y">put the Y value</label>
+    <input type="text" name="y" id="y">
+
+    <button onclick="add(x.value,y.value)">Add</button>
+
+    <label for="result">Answer</label>
+    <input type="text" name="Result" id="result">
+    <script>
+        function add(a, b) {
+            debugger;
+            X = parseInt(a);
+            Y = parseInt(b);
+            c = X + Y;
+            
+            alert("the value of addition of x & Y is " +c  );
+            // or
+            console.log(`the value of x & y is ${c}`);
+            
+            result.value=c;
+            
+            return c;
+        }
+
+        function sub(a, b) {
+            debugger;
+            X = parseInt(a);
+            Y = parseInt(b);
+            c = X + Y;
+            
+            alert("the value of addition of x & Y is " +c  );
+            // or
+            console.log(`the value of x & y is ${c}`);
+            
+            result.value=c;
+            
+            return c;
+        }
+    </script>
+</body>
+
+</html>

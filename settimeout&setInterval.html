@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bo {
+            border: 2px solid black;
+            border-radius: 18px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="settime" class="bo">
+        welcome to you
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <div id="set1">
+
+
+    </div>
+
+    <button onclick="dateTime()">Time</button>
+
+    <script>
+
+        // for set time out
+
+        log = () => {  //here we use arrow function
+            settime.innerHTML = "WE are learning the SetTimeOut & setInterval"
+        }
+
+        setTimeout(log, 4000);
+
+        // for setInterval
+
+        // arrow function we used
+
+        
+              dateTime = () => {
+            debugger
+            // setinterval for js function call continously.
+            setInterval(timefun, 1000)
+
+            function timefun() {
+                set1.innerHTML = Date();
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="asyn"></div>
+<hr>
+    <div id="syn"></div>
+
+    <hr>
+    <div id="call"></div>
+    <script>
+        // asynchronous action or programming
+        // setTimeout(() => {
+        //     asyn.innerHTML ="we are in asynchronous" 
+        // }, 4000);
+        
+
+        // synchronous action or programming 
+
+        // let a=prompt("enter the your name");
+        // let b = prompt("please enter your age");
+        // let c=prompt("where you live");
+
+        // syn.innerHTML = ("My name is "+a+" and my age is " +b+ " years, currently living in" +c );
+    </script>
+
+
+<!-- for callback function -->
+<script>
+
+    let add=(a,b)=>{
+        return a+b;
+    }
+    let divide=(a,b)=>{
+        return a/b;
+    }
+    
+    function calculate (a,b,operation){   //callback function - FUNCTION PASSED AS AN ARGUMENT TO ANOTHER FUNCTION, WHICH ALLOW THIS FUNCTION TO CALL THE ANOTHER FUNCTION         IMP
+        return operation(a,b);
+    }
+
+    let caladd=calculate(2,4,add);
+    
+    let caldiv = calculate(25,5,divide);
+    
+    call.innerHTML = "this add function is call by callback function " + caladd+ "        &&&&&&      " +" this add function is call by callback function " +caldiv;
+    
+
+</script>
+
+</body>
+
+
+</html>

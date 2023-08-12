@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    
+    <div>
+        <h1 id="heading">this is heading</h1>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+    </div>
+    <div id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat veniam voluptatum, voluptate cupiditate iste nam totam nisi? Neque, natus fugit, voluptate est quisquam, iste autem nam voluptates repudiandae consequatur dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, error. Tempora neque dolores placeat cupiditate fugit molestiae. Similique mollitia ipsam saepe ipsa aperiam tempore voluptatem assumenda harum ratione beatae! Necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut nam, suscipit id vero incidunt aut at commodi asperiores impedit velit facilis veritatis ipsum expedita praesentium magnam laudantium repudiandae quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus tempora iusto quia alias modi sequi quod consectetur dicta. In esse alias a quisquam architecto dolor? Nihil cupiditate sint accusantium.
+    </div>
+
+    <div id="getid">
+
+    </div>
+
+    <script>
+        
+    $('h1').click(function(){
+        console.log("click")
+        document.getElementById("heading").style.background ="red";
+    })
+
+    $('p').click(function(){
+        console.log("you click on the paragraph");
+        // $('p').hide();  // this we hide the complete p tag
+        $(this).hide();  // this hide we click on only ine element
+    })
+
+
+    $('h1').mouseenter(function(){
+        heading.style.background = "blue";
+    })
+    $("h1").mouseleave(function(){
+        heading.style.background="red";
+    })
+
+    // paragraph fade methods like fadeout, fade in, fade to, fade togle
+
+    // $(para).fadeOut(4000, function(){
+    //     heading.innerHTML ="hide";
+    // })
+
+    // $(para).fadeToggle(8000, function(){
+    //     heading.innerHTML ="show";
+    // })
+
+    // // for sliding method like slide up, slide down, slide toggle
+    //     $('#para').slideToggle(3000, function(){
+    //         console.log("hide");
+    //     })
+
+    //     $('#para').slideToggle(5000, function(){
+    //         console.log("show");
+    //     })
+
+
+        // animate in jQuery
+
+        $('#para').animate({
+            opacity:0.5,
+            height:'200px',
+            width:'650px'
+        }, 5000)
+    
+
+
+        // css in jquery
+
+        $('#para').css('background-color',"red")
+
+
+        // ajax
+
+        $.get('https://mocki.io/v1/7edeeadf-77a8-4157-998b-cba71e1fd4de', function(data,status){
+            
+            getid.innerHTML = data.name ;
+            console.log(status);
+        })
+
+
+        $.post("https://mocki.io/v1/7edeeadf-77a8-4157-998b-cba71e1fd4de",
+        {name:"mallesh", city:"kalyan"},  // object here we right
+                function(data, status){
+           
+            console.log(status);
+        }
+        
+        )
+
+    </script>
+</body>
+</html>

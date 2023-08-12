@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            background-color: black;
+            color: antiquewhite;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.JavaScript Can Change HTML Content -->
+
+    <div id="demo">
+        hello js
+    </div>
+
+    <!-- 2.JavaScript can change HTML attribute values -->
+
+    <div style="border: 2px solid black;">
+        <!-- <button onclick="document.getElementById('bulb').src='pic_bulbon.gif'">Turn on light </button> -->
+        <!-- in this function is return in on click -->
+        <button onclick="on()">Turn on light</button>
+        <img id="bulb" src="pic_bulboff.gif" alt="bulbimg">
+        <button onclick="off()">turn off light</button>
+    </div>
+
+
+    <!-- 3.JavaScript Can Change HTML Styles (CSS)-->
+    <div id="my">
+        <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat perferendis, recusandae blanditiis nihil
+            cupiditate delectus id quidem quam veritatis facere, nisi repudiandae aliquid. Voluptatem illum repellendus
+            natus sit excepturi sed.</p>
+
+        <button onclick="document.getElementById('my').style.fontSize ='25px'">change html style</button>
+        <button onclick="bor()">for apply border</button>
+    </div>
+
+    <!-- 4.JavaScript Can Show or hide HTML Elements -->
+    <div style="border: 2px solid greenyellow;">
+        <h3 id="hide1">this is showing</h3>
+
+        <button onclick="hide()">hide</button>
+        <button onclick="show()">Show</button>
+
+    </div>
+
+    <script>
+
+        //    1. // change html content and also add settime out
+        // METHODS 1 FOR DIRECTIY HTML CHANGE 
+        setTimeout(() => {
+            demo.innerHTML = "get go to study";
+        }, 2000);
+
+
+        // or 
+
+        // METHODS 2 HERE WE CAN CALL ELEMENT BY ID
+        // setTimeout(() => {
+        //     document.getElementById("demo").innerHTML="get go to study";
+        // }, 2000);
+
+        // ==============================end=================================================================================================
+
+        // 2.JavaScript can change HTML attribute values.
+        function on() {
+            bulb.src = "pic_bulbon.gif";
+        }
+        function off() {
+            bulb.src = "pic_bulboff.gif";
+        }
+
+        // ============================end============================================================================================
+        // 3. JavaScript Can Change HTML Styles (CSS)
+        function bor() {
+            my.style.border = '5px solid red';
+        }
+
+        // ================================================================================================
+        // 4. JavaScript Can Show or hide HTML Elements
+        function hide() {
+
+            hide1.style.display = "none";
+        }
+
+        function show() {
+            hide1.style.display = "block";
+
+        }
+
+
+    </script>
+</body>
+
+</html>

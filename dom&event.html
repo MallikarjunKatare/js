@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightgreen;
+            color: black;
+            margin: 5px 0px;
+            padding: 5px;
+            border: 4px double black;
+        }
+
+
+
+        .democlass {
+
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="de">
+        <h4>this is dom maniputation</h4>
+        <button id="click"> click</button>
+    </div>
+
+
+
+    <div class="container">
+        <h4>this paragraph</h4>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae cumque tenetur totam deleniti
+            voluptas voluptates eligendi sunt inventore, commodi repellat accusantium doloremque quod nisi ducimus
+            necessitatibus fugiat, veniam numquam.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <h5>this is para</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae cumque tenetur totam deleniti
+            voluptas voluptates eligendi sunt inventore, commodi repellat accusantium doloremque quod nisi ducimus
+            necessitatibus fugiat, veniam numquam.</p>
+    </div>
+<hr>
+<!-- ----------------------------EVENT -->
+<hr>
+
+    <div id="event1">
+
+        <h5>this is for Event</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae cumque tenetur totam deleniti
+            voluptas voluptates eligendi sunt inventore, commodi repellat accusantium doloremque quod nisi ducimus
+            necessitatibus fugiat, veniam numquam.</p>
+
+            <button onclick="butt()">click</button>
+
+    </div>
+
+
+<!-- 
+<script>
+
+// for DOM=================================================================
+// ------------------------------------------------ID
+        let elem = document.getElementById("de").style.border = "5px solid black";
+        let elem1 = document.getElementById("de").style.background = "yellow";
+
+        // ------------------------------------CLASS-----------------------------------------------------
+        let but = document.getElementById("click").style.background = "lightpink";
+
+        let elemclass = document.getElementsByClassName('container');
+
+
+        // classList for add or Remove the class
+
+        elemclass[0].classList.add("democlass")  //here we classlist for adding the class in html element by javascript in 1st class of container.
+
+        elemclass[1].classList.remove("container") //here we classlist for adding the css class in html element by javascript in 1st class of container.
+
+        console.log(elemclass[0].innerHTML);
+        console.log(elemclass[0].innerText);
+
+
+        //==============================BYTAG====================================================================
+
+        let con = document.getElementsByTagName('div');
+        console.log(con);
+
+
+        // here we create html tag in div 0 by using js
+        createElement1 = document.createElement('b'); // we create new Html tag 
+        createElement1.innerText = "this is created element by javascript";
+
+        con[0].appendChild(createElement1);
+
+        /// here we replace html tag in div 0 by using js
+        debugger
+
+        createElement2 = document.createElement('h1');
+        createElement2.innerText = "this is created element love to js"
+        con[0].replaceChild(createElement2, createElement1);
+
+
+        /// here we remove html tag in div 0 by using js
+        
+        // con[0].removeChild(createElement2);
+
+
+        // --------------------------Query-------HTML element by  css  selector----------
+
+        const sel=document.querySelectorAll(".container");
+        console.log(sel);
+
+    </script> -->
+
+
+    <script>
+        // for Event 
+
+
+        //1. for onclick
+
+        function butt(){
+                console.log("this button is click");
+        }
+
+
+        // 2. on load
+
+        window.onload =function(){
+            alert("welcome message onload");
+        }     
+        
+        // 3. onclick on event click
+
+        event1.addEventListener('click', function(){
+            event1.style.border ="2px solid red";
+        })
+
+
+        // 4.mouseover
+
+        event1.addEventListener('mouseover', function(){
+            event1.style.background ="blue";
+        })
+
+        event1.addEventListener('mouseout', function(){
+            event1.style.background ="lightgreen";
+        })
+
+        event1.addEventListener('mouseup',function(){
+            event1.style.background ="red";
+        })
+
+        event1.addEventListener('mousedown',function(){
+            event1.style.background='pink';
+        })
+
+    </script>
+</body>
+
+</html>

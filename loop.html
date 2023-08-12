@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<div class="ie">
+
+</div>
+
+    <script>
+
+
+        // let arr = [1, 2, 3, 4, 5, 6, 7];
+
+
+        // //1.  for loop
+
+        
+
+        // for (let i = 0; i < arr.length; i++) {
+         
+        //     if(i==2){
+        //         // break;
+        //         continue;
+        //     }
+            
+        //     console.log(arr[i]);
+        // }
+
+
+
+        // for(let i=0; i<500; i++){
+
+        //     console.log(i);
+        // }
+
+        // for array element show in individual
+        // arr.forEach(function(element){
+        //     console.log(element);
+        
+        // });
+        // -------------------
+
+        //2.  while loop
+
+
+        // let s=0;
+        //     debugger;
+
+        // while(s<=arr.length){
+            
+        //     console.log(arr[s]);
+
+        //     // alway rem to put s++ in last of function because it excute 1 st then other statement 
+
+        //     s++;
+        // }
+// ---------------------------------
+        // 3. do while 
+        //     let i=0;
+
+        // do{
+        //     console.log(arr[i]);
+        //     i++;
+        // }
+        // while( i < arr.length);
+
+
+        // for in loop---------------------------------------------
+
+        obj={
+            Mallesh:91,
+            Amol:90,
+            Geeta:85,
+            Rahul: 85,
+            Rohan: 82,
+            Raja:45
+        }
+
+        for(let a in obj){
+
+            console.log("the marks of " +a+ " are " +obj[a])
+        }
+
+
+        // for of loop===============================================================
+        for(let b of ["Mallesh","Amol",45,true,55]){
+            console.log(b);
+        }
+
+
+
+        // while
+
+        let n=50;
+        let i=0;
+        while(i<n){
+            console.log(i);
+            i++;
+        }
+    </script>
+</body>
+
+</html>

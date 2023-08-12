@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="tem" id="one">
+    <!-- <input type="text" name="tem" id="two"> -->
+    <button onclick="feet(one.value)">cal</button>
+    <input type="text" name="res" id="res">
+
+
+
+    <script>
+        // TYPES OF FUNCTION -
+
+
+        // -------function decl.-------------
+        // function add(a,b) {
+        //
+        //     x=parseFloat(a);
+        //     y=parseFloat(b);
+        //     c = x + y;
+        //     console.log(c);
+        //     res.value = c;
+        //     return c;
+        // }
+
+
+
+
+        // -----------------function expression------------------
+
+        // const add= function(a,b){
+
+        //     x=parseFloat(a);
+        //     y=parseFloat(b);
+        //     c = x + y;
+        //     console.log(c);
+        //     res.value = c;
+        //     return c;
+        // }
+
+
+        // ------------------------------arrow function----------------------------------------------
+
+        // let add = (a, b) => {
+
+        //     x = parseFloat(a);
+        //     y = parseFloat(b);
+        //     c = x + y;
+        //     console.log(c);
+        //     res.value = "the value of a & b is "+ c +" only";
+        // }
+
+        
+
+
+
+        function feet(a){
+            debugger;
+            f=parseFloat(a);
+            let m;
+
+            m=f*0.3048;
+            console.log(m);
+            res.value = "the meter "+ m +" only";
+            return m;
+        }
+
+
+    </script>
+</body>
+
+</html>
